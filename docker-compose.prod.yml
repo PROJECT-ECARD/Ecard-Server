@@ -1,0 +1,63 @@
+version: '3'
+networks:
+  app-tier:
+    driver: bridge
+volumes:
+  ecard-pgdata:
+  redis_data:
+services:
+  api_ecard:
+    container_name: "api_ecard"
+    image: "node:16.14.0"
+    networks:
+      - app-tier
+    depends_on:
+      - ecard_redis
+      - ecard_postgres
+    restart: always
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+      # - /home/node/app/upload/*
+    env_file:
+      - .env
+    ports:
+      - 5101:8000
+    command: bash -c "npm install && node dist/main && echo $TZ > /etc/timezone"
+  ecard_postgres:
+    container_name: ecard_postgres
+    image: postgres:11
+    ports:
+      - "5102:5432"
+    volumes:
+      - ecard-pgdata:/var/lib/postgresql/data
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+      PG_DATA: /var/lib/postgresql/data
+    networks:
+      - app-tier
+  ecard_redis:
+    container_name: ecard_redis
+    image: 'bitnami/redis:latest'
+    volumes:
+      - redis_data:/bitnami/redis/data
+    env_file:
+      - .env
+    ports:
+      - 5103:6379
+    networks:
+      - app-tier
+  ecard_adminer:
+    container_name: ecard_adminer
+    image: adminer
+    depends_on:
+      - ecard_postgres
+    restart: always
+    ports:
+      - 5104:8080
+    networks:
+      - app-tier

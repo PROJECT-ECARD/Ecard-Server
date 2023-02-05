@@ -1,0 +1,45 @@
+version: '3'
+networks:
+  app-tier:
+    driver: bridge
+volumes:
+  ecard-pgdata:
+  redis_data:
+services:
+  ecard_postgres_local:
+    container_name: ecard_postgres_local
+    image: postgres:11
+    ports:
+      - "7011:5432"
+    volumes:
+      - ecard-pgdata:/var/lib/postgresql/data
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+      PG_DATA: /var/lib/postgresql/data
+    networks:
+      - app-tier
+  ecard_redis:
+    container_name: ecard_redis
+    image: 'bitnami/redis:latest'
+    volumes:
+      - redis_data:/bitnami/redis/data
+    env_file:
+      - .env
+    ports:
+      - 5103:6379
+    networks:
+      - app-tier
+  adminer:
+    container_name: ecard_adminer_local
+    image: adminer
+    depends_on:
+      - ecard_postgres_local
+    restart: always
+    ports:
+      - 7012:8080
+    networks:
+      - app-tier
