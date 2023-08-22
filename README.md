@@ -24,7 +24,7 @@
 
 # Ecard API System
 <p align="center">
-  <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.e-card.bg%2F&psig=AOvVaw2ZDJUih6CM58Xf9BVD1w5J&ust=1692778186067000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMj2hKjo74ADFQAAAAAdAAAAABAE" width="200" alt="Ecard Logo" /></a>
+  <a href="#"><img src="https://www.e-card.bg/images/logo.png" width="200" alt="Ecard Logo" /></a>
 </p>
 
 This is personal card management system, purpose to allow user of system can update profile and quick share personal infomation with another user.
