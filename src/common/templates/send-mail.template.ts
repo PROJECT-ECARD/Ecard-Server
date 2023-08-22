@@ -37,11 +37,11 @@ class Mail {
             <div class="container-fluid" style="background-color: #F5F5F5; text-align: center; padding:20px">
                 
                 (+84) 8 1949 0540 <br>
-                info@vndigitech.com <br>
-                VP: Tòa nhà SBI, Lô 6B, ĐS 03, QTSC, P. Tân Cánh Hiệp, Q.12, TP.HCM <br>
-                Trụ sở: E9, A2, KDC Tín Phong, P. Tân Thới Nhất, Q 12, TP.HCM <br><br>
-                Copyright @ 2022 Ecard All rights reserved <br>
-                Contact email: dev10.vndigitech@gmail.com <br>
+                lvtoan.business@gmail.com <br>
+                <br>
+                Trụ sở: 32/50 Lê Thị Hồng, phường 17 quận Gò Vấp, TP.HCM <br><br>
+                Copyright @ 2023 All rights reserved <br>
+                Contact email: lvtoan.business@gmail.com <br>
             </div>
           </body>
         </html>
@@ -121,11 +121,10 @@ class Mail {
           <div class="container-fluid" style="background-color: #F5F5F5; text-align: center;padding:20px">
             
               (+84) 8 1949 0540 <br>
-              info@vndigitech.com <br>
-              VP: Tòa nhà SBI, Lô 6B, ĐS 03, QTSC, P. Tân Cánh Hiệp, Q.12, TP.HCM <br>
-              Trụ sở: E9, A2, KDC Tín Phong, P. Tân Thới Nhất, Q 12, TP.HCM <br><br>
-              Copyright @ 2022 Ecard All rights reserved <br>
-              Contact email: dev10.vndigitech@gmail.com <br>
+              lvtoan.business@gmail.com.com <br>
+              Trụ sở: 32/50 Lê Thị Hồng, phường 17 quận Gò Vấp, TP.HCM <br><br>
+              Copyright @ 2023 All rights reserved <br>
+              Contact email: lvtoan.business@gmail.com <br>
           </div>
         </body>
       </html>
@@ -166,11 +165,10 @@ class Mail {
           <div class="container-fluid" style="background-color: #F5F5F5; text-align: center; padding:20px">
               
               (+84) 8 1949 0540 <br>
-              info@vndigitech.com <br>
-              VP: Tòa nhà SBI, Lô 6B, ĐS 03, QTSC, P. Tân Cánh Hiệp, Q.12, TP.HCM <br>
-              Trụ sở: E9, A2, KDC Tín Phong, P. Tân Thới Nhất, Q 12, TP.HCM <br><br>
-              Copyright @ 2022 Ecard All rights reserved <br>
-              Contact email: dev10.vndigitech@gmail.com <br>
+              lvtoan.business@gmail.com <br>
+              Trụ sở: 32/50 Lê Thị Hồng, phường 17 quận Gò Vấp, TP.HCM <br><br>
+              Copyright @ 2023 All rights reserved <br>
+              Contact email: lvtoan.business@gmail.com <br>
           </div>
         </body>
       </html>

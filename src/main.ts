@@ -30,12 +30,12 @@ function initialSwagger(app: NestExpressApplication): void {
     .setTitle('ECard API Document')
     .setDescription('The document about list of API for ECard')
     .setVersion('1.0')
-    .setContact('LeVanToan', 'https://www.linkedin.com/in/toan-le-9a6499193/', 'lvtoan.it2000@gmail.com')
+    .setContact('LeVanToan', 'https://www.linkedin.com/in/toan-lv/', 'lvtoan.it2000@gmail.com')
     .addBasicAuth()
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api-docs', app, document);
+  SwaggerModule.setup('ecard-api-docs', app, document);
 }
 
 async function bootstrap() {

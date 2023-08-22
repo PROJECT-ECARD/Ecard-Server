@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
@@ -18,56 +18,55 @@
   <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
+</p> -->
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# Ecard API System
+<p align="center">
+  <a href="#"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.e-card.bg%2F&psig=AOvVaw2ZDJUih6CM58Xf9BVD1w5J&ust=1692778186067000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMj2hKjo74ADFQAAAAAdAAAAABAE" width="200" alt="Ecard Logo" /></a>
+</p>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is personal card management system, purpose to allow user of system can update profile and quick share personal infomation with another user.
+
+## Description
+- This project built to help everyone create online postcard for themselfs.
+- The primary languages of project is Typescript connect to PostgreSQL by firstcode concept combine with NestJS framework, TypeORM.
+- Using JWT, SMTP and Queue to process sign up function
 
 ## Installation
-
+Open your terminal and run:
 ```bash
-$ npm install
+$ git clone https://github.com/PROJECT-ECARD/Ecard-Server.git
 ```
 
 ## Running the app
-
+Go to folder contains project, open terminal
 ```bash
-# development
 $ npm run start
 
-# watch mode
-$ npm run start:dev
+# access api document, you can test functions at here
+uri: localhost:8000/ecard-api-docs
 
-# production mode
-$ npm run start:prod
-```
+# build image and start container
+$ docker-compose up -d
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+# review data of tables
+uri: localhost:7012
+# system: PostgreSQL
+# server: ecard_postgres_local, 
+# username: admin
+# password: admin
+# database: postgresdb
 ```
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+If you have any question, please contact me by lvtoan.it2000@gmail.com or 0819490540.
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [LeVanToan](https://bio.link/lvtoan)
+- Website - [Portfolio](https://portfolio-dev-lvtoan.netlify.app/)
+- LinkedIn - [toan-lv](https://www.linkedin.com/in/toan-lv/)
 
-## License
-
-Nest is [MIT licensed](LICENSE).
